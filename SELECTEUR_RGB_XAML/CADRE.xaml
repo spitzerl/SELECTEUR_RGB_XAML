@@ -1,7 +1,7 @@
 ﻿<Window x:Class="RGB_XAML.CADRE"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="CADRE" Height="500" Width="500">
+        Title="Sélecteur RGB" Height="510" Width="500">
     <Grid Margin="10">
         <StackPanel>
 
