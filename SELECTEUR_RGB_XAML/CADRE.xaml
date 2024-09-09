@@ -1,0 +1,32 @@
+﻿<Window x:Class="RGB_XAML.CADRE"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CADRE" Height="450" Width="800">
+    <Grid Margin="10">
+        <StackPanel>
+
+            <!-- Slider Rouge -->
+            <TextBlock Text="Rouge" FontSize="14" FontWeight="Bold" Margin="5" />
+            <Slider x:Name="SliderRouge" Minimum="0" Maximum="255" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="OnColorChanged"/>
+            <TextBlock x:Name="RougeValue" Text="0" HorizontalAlignment="Right" Margin="5" />
+
+            <!-- Slider Vert -->
+            <TextBlock Text="Vert" FontSize="14" FontWeight="Bold" Margin="5" />
+            <Slider x:Name="SliderVert" Minimum="0" Maximum="255" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="OnColorChanged"/>
+            <TextBlock x:Name="VertValue" Text="0" HorizontalAlignment="Right" Margin="5" />
+
+            <!-- Slider Bleu -->
+            <TextBlock Text="Bleu" FontSize="14" FontWeight="Bold" Margin="5" />
+            <Slider x:Name="SliderBleu" Minimum="0" Maximum="255" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="OnColorChanged"/>
+            <TextBlock x:Name="BleuValue" Text="0" HorizontalAlignment="Right" Margin="5" />
+
+            <!-- Carré de couleur -->
+            <Border x:Name="CouleurPreview" Height="100" Width="100" Margin="10" BorderBrush="Black" BorderThickness="1">
+                <Border.Background>
+                    <SolidColorBrush Color="Black"/>
+                </Border.Background>
+            </Border>
+
+        </StackPanel>
+    </Grid>
+</Window>
