@@ -22,6 +22,15 @@ namespace RGB_XAML
             Color color = Color.FromRgb((byte)red, (byte)green, (byte)blue);
 
             CouleurPreview.Background = new SolidColorBrush(color);
+
+            string hexColor = $"#{red:X2}{green:X2}{blue:X2}";
+            RGBCode.Text = hexColor;
+        }
+        private void CopyToClipboard(object sender, RoutedEventArgs e)
+        {
+            // Copier le texte affiché dans RGBCode dans le presse-papier
+            Clipboard.SetText(RGBCode.Text);
+            MessageBox.Show("Code RGB copié dans le presse-papier : " + RGBCode.Text);
         }
     }
 }
